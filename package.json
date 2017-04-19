@@ -1,0 +1,39 @@
+{
+  "name": "aliyun-dns-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dns.js",
+  "homepage": "http://github.com/coolme200/aliyun-dns-updater",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:coolme200/aliyun-dns-updater.git"
+  },
+  "keywords": [
+    "dns",
+    "aliyun"
+  ],
+  "dependencies": {
+    "debug": "^2.6.3",
+    "urllib": "^2.22.0",
+    "co": "^4.6.0",
+    "cron": "^1.2.1",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "ci": {
+    "versions": [
+      "6",
+      "7"
+    ]
+  },
+  "scripts": {
+    "test": "npm run lint && npm run test-local",
+    "ci": "npm run lint && npm run init && npm run cov"
+  },
+  "author": "汤尧"
+}
