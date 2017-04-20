@@ -1,19 +1,26 @@
 # aliyun-dns-updater
 
 
-1. edit conf ${HOME}/aliyunDnsUpdaterConf.json
+1. install
+
+```
+$ npm install aliyun-dns-updater --save
+```
+
+
+2. edit conf ${HOME}/aliyunDnsUpdaterConf.json
 
 ```
 {
-  "RecordId": "1",
-  "AccessKeyId": "",
-  "AccessKeySecret": ""
+  "RecordId": "dns RecordId in https://netcn.console.aliyun.com/core/domain/list",
+  "AccessKeyId": "your AccessKeyId",
+  "AccessKeySecret": "your AccessKeySecret"
 }
 
 ```
 
-2. start
+3. start
 
 ```
-nohup node dns.js -c aliyunDnsUpdaterConf.json > aliyun-dns-updater.log 2>&1 &
+$ nohup node ${basedir}/dns.js -c aliyunDnsUpdaterConf.json > aliyun-dns-updater.log 2>&1 &
 ```
