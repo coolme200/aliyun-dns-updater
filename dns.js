@@ -3,10 +3,8 @@
 const co = require('co');
 const fs = require('fs');
 const path = require('path');
-const cron = require('cron');
 const Updater = require('./updater');
 const program = require('commander');
-var CronJob = require('cron').CronJob;
 
 program
   .option('-c, --config [config]', 'appoint the `*.json` config file path')
@@ -33,6 +31,4 @@ const job = function() {
   });
 };
 
-new CronJob('0 */2 * * * *', function() {
-  job();
-}, null, true);
+job();
