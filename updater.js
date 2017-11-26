@@ -19,7 +19,7 @@ class Updater {
   }
 
   * getIp() {
-    const result = yield urllib.requestThunk('http://ip.cn/', {
+    const result = yield urllib.requestThunk('http://ip.360.cn/IPShare/info', {
       method: 'GET',
       headers: {
         'Accept': 'text/html',
