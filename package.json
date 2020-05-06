@@ -1,6 +1,6 @@
 {
   "name": "aliyun-dns-updater",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dns.js",
   "homepage": "http://github.com/coolme200/aliyun-dns-updater",

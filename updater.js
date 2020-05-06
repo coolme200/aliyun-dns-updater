@@ -19,7 +19,7 @@ class Updater {
   }
 
   * getIp() {
-    const result = yield urllib.requestThunk('http://ip.360.cn/', {
+    const result = yield urllib.requestThunk('http://www.net.cn/static/customercare/yourip.asp', {
       method: 'GET',
       headers: {
         'Accept': 'text/html',
